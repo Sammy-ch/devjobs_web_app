@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+$clr-primary-400:hsla(235,69%,61%,1);
+
+$clr-accent-300:hsl(235,82%,77%);
+$clr-accent-100:hsl(210,22%,96%);
+
+$clr-neutral-500:hsl(212,23%, 69%) ;
+$clr-neutral-600:hsl(214,17%,51%) ;
+$clr-neutral-800:hsl(219,29%,14%);
+$clr-neutral-900:hsl(220,29%,10%) ;
+$clr-neutral-100:hsl(0,0%,100%);
+
+$fw-regular:400;
+$fw-bold:700;
+
+$fs-500: 0.875rem;
+$fs-600: 1rem;
+$fs-700: 1.3rem;
+$fs-800: 1.4rem;
+$fs-900: 1.75rem;
+
+$fs-body:var($fs-600);
+$fs-primary-heading:var($fs-700);
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: $clr-accent-100;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+//General styling
+.wrapper {
+    display: grid;
+    grid-template-columns:
+    1fr
+    MIN(150ch, 100%)
+    1fr;
+}
+.wrapper > * {
+    grid-column: 2;
+}
+
+.company_logo{
+    background-color: red;
+}
+
+.desc_card{
+    display: flex;
+    background-color: white;
+    border-radius: 6px;
+}
+.location{
+    color: $clr-primary-400;
+    font-weight: $fw-bold;
+}
+
+
+
+span{
+    color:$clr-neutral-600 ;
+}
+
+.header {
+    background-color: $clr-primary-400;
+    background-image: url("../public/assets/desktop/bg-pattern-header.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+input,input:focus{
+    outline: none;
+    background: none;
+    padding-right: 5px;
+    width: 16.9rem;
+}
+
+button{
+    background-color: $clr-primary-400;
+}
+.search-btn input{
+    height: 24px;
+    width: 24px;
+}
+
+.company_header {
+    display: grid;
+    grid-template-columns: 140px 1fr; 
+    height: 140px;
+    border-radius: 6px;
+}
+
+h4{
+    color: $clr-neutral-800;
+    font-weight: $fw-bold;
+    font-size: $fs-800;
+}
+
+.job_description {
+    height: 100%;
+    border-radius: 6px;
+
+    p {
+        color: $clr-neutral-600;
+        
+    }
+}
+.company-btn{
+    background-color: rgba(89, 100, 224, 1);
+    color: white;
+}
+
+.jb-position {
+   h1 {  
+    font-size: $fs-900;
+    font-weight: $fw-bold;
+   } 
+}
+
+header {
+    font-size: 20px;
+    font-weight: $fw-bold;
+}
+
+ul {
+    padding-top: 24px;
+    list-style: circle inside;
+}
+
+ul li {
+    color: darkblue;
+}
+
+ol {
+    padding-top: 24px;
+    list-style: decimal inside;
+}
+
+footer {
+    b{
+        justify-self: center;        
+    }
+}
