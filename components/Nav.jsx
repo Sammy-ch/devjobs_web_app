@@ -9,7 +9,7 @@ import SunIcon from "public/assets/desktop/icon-sun.svg"
 
 const Nav = () => {
   return (
-      <nav className={"px-[165px] pt-[45px] w-full header h-[162px] rounded-bl-[100px]"}>
+      <nav className={"px-[165px] sm:px-[24px] pt-[45px] w-full header h-[162px] rounded-bl-[100px]"}>
             <div className={"flex flex-row text-3xl justify-between w-full"}>
                     <Image src={devLogo} alt={"dev_logo"} className={"h-[32px] w-[115px]"}/>
                   <div className="flex justify-center">
