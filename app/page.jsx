@@ -145,7 +145,7 @@ const [filteredData, setFilteredData] = useState([]);
                           onChange={(e) =>{setIsFullTime(e.target.checked)}}
                           className={"mr-[16px] ml-[25px]"}/>
   
-                        <b className={""}>Full Time Only </b>
+                        <b className={"text-white"}>Full Time Only </b>
                         
   
                   </div>
