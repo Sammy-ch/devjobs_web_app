@@ -123,7 +123,7 @@ const [filteredData, setFilteredData] = useState([]);
              <motion.div
              initial={{ scale: 0, opacity: 1, x: '-50%', y: '-50%' }}
              animate={{ scale: 1, opacity: 1 }}
-             className='w-[80vw] flex flex-col justify-between fixed top-[425px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75
+             className='w-[80vw] flex flex-col justify-between fixed top-[320px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75
           rounded-lg bg-[#cfd3ff] py-[32px]'
            >
             <div className="flex ml-[25px] pb-[50px] gap-[16px]">
