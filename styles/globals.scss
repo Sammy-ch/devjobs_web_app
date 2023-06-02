@@ -114,9 +114,19 @@ button{
 .company_header {
     display: grid;
     grid-template-columns: 140px 1fr; 
-    height: 140px;
+    max-height: 100%;
     border-radius: 6px;
 }
+
+@media only screen and (max-width:640px) {
+    .company_header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 h4{
     color: $clr-neutral-800;
@@ -156,7 +166,7 @@ ul {
 }
 
 ul li {
-    color: darkblue;
+    color: black;
 }
 
 ol {
